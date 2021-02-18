@@ -1,13 +1,11 @@
 import React from 'react';
+import CoastRiver2 from "./models/CoastRiver2";
 
 function BuildScene(props) {
 
 	return (
 			<>
-				<mesh position={[0, 0, 0]}>
-					<boxBufferGeometry attach="geometry" args={[1, 1, 1]}/>
-					<meshPhongMaterial attach="material" color="#fff"/>
-				</mesh>
+				<CoastRiver2 />
 			</>
 	);
 }

@@ -14,12 +14,12 @@ function App() {
           invalidateFrameloop
           colorManagement
           shadowMap
-          camera={{position: [6, 4, 6], near: 1, fov: 35}}
+          camera={{position: [0, 1, 10], fov: 15}}
       >
         <Suspense fallback={null}>
           <OrbitControls
               enableDamping={true}
-              target={[0, 1, 0]}
+              target={[0, 0, 0]}
               dampingFactor={0.25}
               rotateSpeed={0.4}
               keyPanSpeed={0.4}
@@ -28,13 +28,14 @@ function App() {
               enablePan={true}
               panSpeed={0.4}
               minPolarAngle={Math.PI / 4}
-              maxPolarAngle={Math.PI / 2}
-              minDistance={-500}
-              maxDistance={1000}
+              maxPolarAngle={Math.PI / 2.1}
+              minDistance={-1000}
+              maxDistance={2000}
           />
           <Lights />
-          <BuildScene />
           <Floor />
+          <BuildScene />
+
         </Suspense>
       </Canvas>
       <Loader/>
