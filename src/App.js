@@ -3,7 +3,7 @@ import "./styles/app.scss";
 import {Canvas} from "react-three-fiber";
 import {Loader, OrbitControls} from "@react-three/drei";
 import Lights from "./components/Lights";
-import Floor from "./components/Floor";
+//import Floor from "./components/Floor";
 //import BuildScene from "./components/BuildScene";
 
 function App() {
@@ -33,7 +33,7 @@ function App() {
               maxDistance={2000}
           />
           <Lights />
-          <Floor />
+          {/*<Floor />*/}
         </Suspense>
       </Canvas>
       <Loader/>
