@@ -34,7 +34,6 @@ function App() {
           />
           <Lights />
           <Floor />
-
         </Suspense>
       </Canvas>
       <Loader/>
