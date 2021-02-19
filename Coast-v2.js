@@ -26,9 +26,9 @@ export default function Model(props) {
         <group position={[0.12, -0.06, 0]} rotation={[Math.PI / 2, 0, -Math.PI]}>
           <mesh material={materials.GrayMam} geometry={nodes.Extrude5_1.geometry} />
         </group>
-        <group position={[0.12, -0.06, -0.01]} rotation={[Math.PI / 2, 0, -Math.PI]}>
-          <mesh material={materials.GrayMam} geometry={nodes.Extrude6_1.geometry} />
-        </group>
+        {/*<group position={[0.12, -0.06, -0.0]} rotation={[Math.PI / 2, 0, -Math.PI]}>*/}
+        {/*  <mesh material={materials.GrayMam} geometry={nodes.Extrude6_1.geometry} />*/}
+        {/*</group>*/}
       </group>
       <mesh material={materials.BlueMat} geometry={nodes.sea.geometry} />
     </group>
