@@ -7,7 +7,7 @@ import {useGLTF} from '@react-three/drei'
 
 export default function CoastRiver2(props) {
 	const group = useRef()
-	const {nodes, materials} = useGLTF('/coast-v2.gltf')
+	const {nodes, materials} = useGLTF('../../../coast-v2.gltf')
 	return (
 			<group ref={group} {...props} dispose={null}>
 				<group position={[0.12, 0, -0.06]} rotation={[Math.PI / 2, 0, -Math.PI]}>
@@ -37,4 +37,4 @@ export default function CoastRiver2(props) {
 	)
 }
 
-useGLTF.preload('/coast-v2.gltf')
+useGLTF.preload('../../../coast-v2.gltf')
