@@ -16,7 +16,7 @@ function App() {
           shadowMap
           camera={{position: [0, 1, 10], fov: 15}}
       >
-        {/*<Suspense fallback={null}>*/}
+        <Suspense fallback={null}>
           <OrbitControls
               enableDamping={true}
               target={[0, 0, 0]}
@@ -35,7 +35,7 @@ function App() {
           <Lights />
           <BuildScene />
           {/*<Floor />*/}
-        {/*</Suspense>*/}
+        </Suspense>
       </Canvas>
       {/*<Loader/>*/}
     </>
